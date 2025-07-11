@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinTone AI - Deteksi Warna Kulit Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b;}
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-20 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600">SkinTone AI</a>
+            <a href="/predict" class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 transition-colors duration-300">
+                Coba Sekarang
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Kolom Teks -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 mb-4 leading-tight">
+                        Analisis Warna Kulit Wajah dengan Kecerdasan Buatan
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8">
+                        Platform kami memanfaatkan model deep learning untuk memberikan klasifikasi warna kulit wajah yang cepat dan akurat. Unggah foto Anda dan dapatkan hasilnya dalam sekejap.
+                    </p>
+                    <a href="/predict" 
+                       class="inline-block bg-indigo-600 text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-indigo-200">
+                        Mulai Deteksi
+                    </a>
+                </div>
+                <!-- Kolom Ilustrasi -->
+                <div class="md:w-1/2">
+                    <img src="https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/75/2024/10/25/skintone-dan-undertone-4194872512.jpg" alt="Ilustrasi AI menganalisis wajah" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Fitur Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-800 mb-3">Mengapa Memilih Kami?</h2>
+            <p class="text-slate-500 mb-12 max-w-2xl mx-auto">Tiga pilar utama yang menjadikan aplikasi kami sebagai pilihan terbaik untuk analisis warna kulit.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Fitur 1 -->
+                <div class="p-8 border border-gray-200 rounded-lg">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full h-12 w-12 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cepat & Mudah</h3>
+                    <p class="text-slate-500">Antarmuka yang intuitif memungkinkan Anda mengunggah gambar dan mendapatkan hasil prediksi dalam hitungan detik.</p>
+                </div>
+                <!-- Fitur 2 -->
+                <div class="p-8 border border-gray-200 rounded-lg">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full h-12 w-12 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Akurasi Tinggi</h3>
+                    <p class="text-slate-500">Didukung oleh model AI yang telah dilatih pada ribuan data untuk memastikan hasil klasifikasi yang andal.</p>
+                </div>
+                <!-- Fitur 3 -->
+                <div class="p-8 border border-gray-200 rounded-lg">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full h-12 w-12 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Privasi Terjaga</h3>
+                    <p class="text-slate-500">Kami tidak menyimpan gambar yang Anda unggah. Privasi dan keamanan data Anda adalah prioritas utama kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 SkinTone AI. Dibuat untuk memenuhi tugas Akhir (Skripsi).</p>
+        </div>
+    </footer>
+
+</body>
+</html>
