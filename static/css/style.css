@@ -1,0 +1,64 @@
+/* File: static/css/style.css */
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f8fafc; 
+    color: #1e293b; 
+}
+
+.tab-button { 
+    padding: 8px 16px; 
+    font-weight: 600; 
+    border-bottom: 2px solid transparent; 
+    color: #475569; 
+    transition: all 0.2s; 
+}
+
+.tab-button.active { 
+    border-color: #4f46e5; 
+    color: #4f46e5; 
+    background-color: #eef2ff; 
+}
+
+.tab-panel { 
+    display: none; 
+}
+
+.tab-panel.active { 
+    display: block; 
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+.upload-area { 
+    border: 2px dashed #d1d5db; 
+}
+
+.upload-area.dragover { 
+    border-color: #4f46e5; 
+    background-color: #eef2ff; 
+}
+
+.fade-in { 
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+.loader { 
+    border-top-color: #4f46e5; 
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin { 
+    to { transform: rotate(360deg); } 
+}
+
+video { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 0.5rem; 
+    transform: scaleX(-1); 
+}
